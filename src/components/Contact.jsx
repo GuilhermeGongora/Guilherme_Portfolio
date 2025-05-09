@@ -5,6 +5,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
+import ReactorCanvas from "./canvas/Reactor";
 
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -123,7 +124,7 @@ const Contact = () => {
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] 
       "
       >
-        <EarthCanvas />
+        <ReactorCanvas />
       </motion.div>
     </div>
   );
