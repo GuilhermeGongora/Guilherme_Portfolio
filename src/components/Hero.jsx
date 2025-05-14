@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className="w-full mx-auto overflow-hidden">
       <div
-        className={`${styles.paddingX} pt-32 pb-10 max-w-7xl mx-auto flex flex-row md:flex-row items-start gap-5`}
+        className={`${styles.paddingX} pt-32 pb-5 max-w-7xl mx-auto flex flex-row md:flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center md:mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -32,15 +32,11 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      {/* Render seguro do Canvas como em Contact */}
       {isClient && (
-        <div className="w-full h-[350px] md:h-[550px]">
+        <div className="w-full h-[350px] md:h-[550px] md:translate-y-[-100px]">
           <EarthCanvas />
         </div>
       )}
-
-      {/* Indicador de scroll */}
       <div className="w-full flex justify-center items-center mt-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

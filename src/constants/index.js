@@ -16,7 +16,8 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
+  fatec,
+  fortec,
   tesla,
   shopify,
   carrent,
@@ -28,15 +29,23 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Sobre",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Trajetoria",
+  },
+  {
+    id: "Skills",
+    title: "Habilidades",
+  },
+  {
+    id: "projects",
+    title: "Projetos",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contato",
   },
 ];
 
@@ -116,55 +125,28 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Técnico em Informática",
+    company_name: "Escola e Faculdade Fortec",
+    icon: fortec,
+    iconBg: "#FFFFFF",
+    date: "Fevereiro 2022 - Dezembro 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desenvolvi aplicações reais e funcionais ao longo do curso, aplicando conceitos práticos em projetos relevantes.",
+      "Dominei técnicas de código limpo, boas práticas de programação, algoritmos, fundamentos matemáticos, estrutura de dados, sistemas operacionais, arquitetura de hardware e programação orientada a objetos.",
+      "Aprofundei meus conhecimentos em diversas linguagens de programação, incluindo: HTML, CSS, JavaScript, Xamarin, C, C++, C#, PHP, Python, SQL e Java.",
+      "Fortaleci competências técnicas (hard skills) e interpessoais (soft skills), o que me capacitou para os desafios do mercado de trabalho, tornando-me um profissional mais resiliente, estratégico e com postura de maior senioridade.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Curso Superior em Análise e Desenvolvimento de Sistemas.",
+    company_name: "Fatec Praia Grande",
+    icon: fatec,
+    iconBg: "#FFFFFF",
+    date: "Fevereiro 2025 - Feb 2027",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Possuo sólida base nos conteúdos já abordados na graduação e, com esse conhecimento, tenho me dedicado ao máximo em todas as disciplinas, colaborando ativamente com meus colegas de classe.",
+      "Tenho me aprofundado continuamente em áreas como desenvolvimento web, algoritmos, arquitetura de computadores, matemática e fundamentos de administração.",
+      "A faculdade tem proporcionado uma formação abrangente, tanto em hard skills quanto em soft skills, permitindo um desenvolvimento intelectual mais acelerado e eficaz, graças a um ambiente acadêmico enriquecedor e estimulante.",
     ],
   },
 ];
@@ -172,7 +154,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "After Gui optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -180,7 +162,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "After Gui optimized our website, our traffic increased by 50%. We can't thank them enough! ",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,7 +170,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Gui optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",

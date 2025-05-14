@@ -21,10 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import DeveloperGongora from "./DeveloperGongora.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import fortec from "./company/fortec.png";
+import fatec from "./company/fatec.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -55,8 +59,11 @@ export {
   meta,
   shopify,
   starbucks,
+  fortec,
+  fatec,
   tesla,
   carrent,
   jobit,
   tripguide,
+  DeveloperGongora,
 };
