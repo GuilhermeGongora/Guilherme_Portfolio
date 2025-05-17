@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, textVariant } from "../utils/motion";
+import { DeveloperGongora } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -21,7 +25,23 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+            <Tilt
+              options={{
+                max: 25,
+                scale: 1,
+                speed: 450,
+              }}
+              className="rounded-full w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] hover:scale-110 overflow-hidden shadow-lg shadow-blue-500"
+            >
+              <img
+                src={DeveloperGongora}
+                alt="Developer Image"
+                className="rounded-full w-full h-full object-cover hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-lg hover:shadow-blue-500"
+              />
+            </Tilt>
+          </motion.div>
+
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Guilherme Gongora &nbsp;
             <span className="sm:block hidden">| Software Developer</span>

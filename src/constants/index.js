@@ -20,6 +20,9 @@ import {
   fortec,
   tesla,
   shopify,
+  tabnews,
+  weathers,
+  handlex,
   carrent,
   jobit,
   tripguide,
@@ -36,7 +39,7 @@ export const navLinks = [
     title: "Trajetoria",
   },
   {
-    id: "Skills",
+    id: "skills",
     title: "Habilidades",
   },
   {
@@ -180,7 +183,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Clone-TabNews",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -196,17 +199,29 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Docker",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Jest",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: tabnews,
+    source_code_link: "https://github.com/GuilhermeGongora/clone-tabnews",
   },
   {
-    name: "Job IT",
+    name: "WeatheRS",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "O WeatheRS é um aplicativo meteorológico que foi idealizado para ajudar as vítimas de enchentes no Rio Grande do Sul (RS). O app combina previsões climáticas de alta qualidade, notícias ambientais, informações de locais de doação e suporte, auxiliando na mobilização de ajuda e tomada de decisões nas situações de emergência.",
     tags: [
       {
-        name: "react",
+        name: "Xamarin",
         color: "blue-text-gradient",
       },
       {
@@ -214,33 +229,45 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Mobile",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "C#",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Figma",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: weathers,
+    source_code_link: "https://github.com/GuilhermeGongora/WeatheRS",
+  },
+  {
+    name: "HandleX",
+    description:
+      "Solução back-end que visa facilitar o acesso de alunos às matérias ministradas em classe, e visando na acessibilidade, a interface do aplicativo conecta a solução com páginas web, que possuem a API VLibras, que traduz os conteúdos digitais para libras, facilitando e integrando o aluno de forma mais eficiente no ambiente educacional.",
+    tags: [
+      {
+        name: "C#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: handlex,
+    source_code_link: "https://github.com/GuilhermeGongora/HandleX",
   },
 ];
 

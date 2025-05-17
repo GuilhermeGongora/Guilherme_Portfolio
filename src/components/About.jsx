@@ -14,7 +14,7 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:shadow-blue-500"
       >
         <div
           options={{
@@ -45,7 +45,7 @@ const About = () => {
       <motion.div className="flex flex-col-reverse md:flex-row items-start gap-10 mb-24">
         <motion.p
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          variants={slideIn("left", "tween", 0.5, 1)}
+          variants={fadeIn("left", "tween", 0.5, 1)}
         >
           Sou desenvolvedor full stack com experiência em front-end e back-end,
           utilizando tecnologias como JavaScript, TypeScript, Node.js, React,
@@ -60,7 +60,7 @@ const About = () => {
           Vamos construir algo extraordinário juntos?
         </motion.p>
 
-        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+        <motion.div variants={fadeIn("right", "tween", 0.2, 1)}>
           <Tilt
             options={{
               max: 45,
