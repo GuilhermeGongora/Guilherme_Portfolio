@@ -11,7 +11,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full mx-auto overflow-hidden">
+    <section className="w-full mx-auto overflow-hidden relative z-10">
       <div
         className={`${styles.paddingX} pt-32 pb-5 max-w-7xl mx-auto flex flex-row md:flex-row items-start gap-5`}
       >
@@ -24,22 +24,22 @@ const Hero = () => {
             Olá, eu sou o <span className="text-[#915eff]">Guilherme!</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Desenvolvo aplicações funcionais e
-            <br className="sm:block hidden" />
-            objetivo sempre criar um pedaço
-            <br className="sm:block hidden" />
+            Desenvolvo aplicações funcionais e objetivo sempre criar um pedaço
             mais bacana de internet!
           </p>
         </div>
       </div>
+
       {isClient && (
-        <div className="w-full h-[350px] md:h-[550px] md:translate-y-[-100px]">
+        <div className="w-full h-[350px] md:h-[550px] md:translate-y-[-100px] pointer-events-none relative z-0">
           <EarthCanvas />
         </div>
       )}
-      <div className="w-full flex justify-center items-center mt-10">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+
+      {/* BOTÃO CLICÁVEL COM Z-INDEX CORRETO */}
+      <div className="w-full flex justify-center items-center mt-10 relative z-50">
+        <a href="#about" className="relative z-50">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 bg-black bg-opacity-30">
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
