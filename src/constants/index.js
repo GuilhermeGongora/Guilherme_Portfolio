@@ -71,6 +71,49 @@ const services = [
   },
 ];
 
+const prices = [
+  {
+    title: "Gongora Start",
+    icon: creator,
+    description: `✔ Aulas individuais ao vivo (1:1)
+✔ Didática adaptada para iniciantes
+✔ Flexibilidade total de horários
+✔ Suporte via WhatsApp
+✔ Ideal para quem está começando do zero
+
+💰 R$60 por hora
+Pague por aula, sem mensalidade.`,
+    plan: "Start",
+  },
+
+  {
+    title: "Gongora Pro",
+    icon: creator,
+    description: `✔ Aulas no Zoom ou Google Meet
+✔ Mentoria individual com plano personalizado
+✔ Suporte 24/7 via WhatsApp
+✔ Foco técnico ou planejamento de carreira
+✔ Recomendado para quem deseja acelerar seu desenvolvimento
+
+💰 R$275 (pacote com 5h de aula)
+Acompanhamento de verdade com metas e direcionamento.`,
+    plan: "Pro",
+  },
+
+  {
+    title: "Gongora Master",
+    icon: creator,
+    description: `✔ Foco em Inteligência Artificial, APIs e mercado
+✔ Correção personalizada de projetos e códigos
+✔ Preparação para entrevistas técnicas, GitHub e portfólio
+✔ Suporte premium direto com mentor
+✔ Aulas contínuas para profissionais em desenvolvimento
+
+💰 R$480/mês (2h semanais)
+Assinatura mensal com foco total em resultados.`,
+    plan: "Mestre",
+  },
+];
 const technologies = [
   {
     name: "HTML 5",
@@ -271,4 +314,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, prices };
