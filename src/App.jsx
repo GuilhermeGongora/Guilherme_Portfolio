@@ -10,6 +10,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import Prices from "./components/PriceCards";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Hero />
         <StarsCanvas />
         <About />
+        <Prices />
         <Experience />
         <Tech />
         <Works />
