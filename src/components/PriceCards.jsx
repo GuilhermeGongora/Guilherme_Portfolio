@@ -8,8 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { DeveloperGongora } from "../assets";
 
 const PriceCard = ({ index, title, icon, description, plan }) => {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
-  const rawMessage = import.meta.env.VITE_WHATSAPP_MESSAGE_TEMPLATE;
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "";
+  const rawMessage =
+    import.meta.env.VITE_WHATSAPP_MESSAGE_TEMPLATE?.trim() ||
+    "Olá! Tenho interesse no plano {{plan}} da Gongora School.";
 
   const message = rawMessage.replace("{{plan}}", plan);
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
