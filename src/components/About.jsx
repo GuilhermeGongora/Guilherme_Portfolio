@@ -45,7 +45,7 @@ const About = () => {
       <motion.div className="flex flex-col-reverse md:flex-row items-start gap-10 mb-24">
         <motion.p
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          variants={fadeIn("left", "tween", 0.5, 1)}
+          variants={fadeIn("center", "tween", 0.5, 1)}
         >
           Sou desenvolvedor full stack com experiência em front-end e back-end,
           utilizando tecnologias como JavaScript, TypeScript, Node.js, React,

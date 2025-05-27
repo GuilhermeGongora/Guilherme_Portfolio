@@ -56,10 +56,17 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.id === "/CV_Guilherme-Gongora_.pdf" ? (
+                <a target="_blank" href={link.id}>
+                  {link.title}
+                </a>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>
+
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
@@ -78,13 +85,16 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setActive(link.title);
-                    setToggle(!toggle);
-                  }}
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(link.title)}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.id === "/CV_Guilherme-Gongora_.pdf" ? (
+                    <a target="_blank" href={link.id}>
+                      {link.title}
+                    </a>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>

@@ -8,6 +8,13 @@ import { SectionWrapper } from "../hoc";
 import { DeveloperGongora } from "../assets";
 
 const PriceCard = ({ index, title, icon, description, plan }) => {
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const rawMessage = import.meta.env.VITE_WHATSAPP_MESSAGE_TEMPLATE;
+
+  const message = rawMessage.replace("{{plan}}", plan);
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
   return (
     <Tilt className="xs:w-[300px] w-full">
       <motion.div
@@ -27,14 +34,16 @@ const PriceCard = ({ index, title, icon, description, plan }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-yellow-600 rounded-lg blur-lg opacity-70 scale-[50px] group-hover:scale-110 transition-transform duration-200 z-0"></div>
 
             {/* Botão com fundo sólido sobreposto */}
-            <div className="relative bg-gradient-to-r from-blue-950 to-yellow-400 p-[2px] rounded-lg z-10">
-              <button
-                type="button"
-                className="w-full h-full bg-tertiary text-white font-semibold py-2 px-6 rounded-lg"
-              >
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative bg-gradient-to-r from-blue-950 to-yellow-400 p-[2px] rounded-lg z-10 block w-full"
+            >
+              <div className="w-full h-full bg-tertiary text-white font-semibold py-2 px-6 rounded-lg text-center">
                 Obtenha o {plan}
-              </button>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </motion.div>

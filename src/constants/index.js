@@ -50,6 +50,10 @@ export const navLinks = [
     id: "contact",
     title: "Contato",
   },
+  {
+    id: "/CV_Guilherme-Gongora_.pdf",
+    title: "Download CV",
+  },
 ];
 
 const services = [

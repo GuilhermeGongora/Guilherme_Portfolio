@@ -21,7 +21,8 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Guilherme Gongora
+            Guilherme{" "}
+            <span className="text-[#915eff] hover:text-white">Gongora</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Desenvolvo aplicações funcionais e objetivo sempre criar um pedaço
