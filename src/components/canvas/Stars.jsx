@@ -1,15 +1,13 @@
-import { useRef, useMemo, Suspense } from "react";
+import { useRef, useMemo, Suspense, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import { inSphere } from "maath/random";
 
-const generateParticles = (count = 5000, radius = 1.2) => {
-  return inSphere(new Float32Array(count), { radius });
-};
+const generateParticles = (count = 5000, radius = 1.2) =>
+  inSphere(new Float32Array(count), { radius });
 
 const RotatingStars = ({ count = 5000, color = "#f272c8", size = 0.002 }) => {
   const pointsRef = useRef();
-
   const positions = useMemo(() => generateParticles(count), [count]);
 
   useFrame((_, delta) => {
@@ -34,15 +32,29 @@ const RotatingStars = ({ count = 5000, color = "#f272c8", size = 0.002 }) => {
   );
 };
 
-const StarfieldBackground = () => (
-  <div className="w-full h-auto absolute inset-0 z-[-1]">
-    <Canvas camera={{ position: [0, 0, 1] }}>
-      <Suspense fallback={null}>
-        <RotatingStars />
-        <Preload all />
-      </Suspense>
-    </Canvas>
-  </div>
-);
+const StarfieldBackground = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= 768);
+    onResize(); // checa na montagem
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  // se for mobile, não renderiza nada
+  if (isMobile) return null;
+
+  return (
+    <div className="w-full h-auto absolute inset-0 z-[-1]">
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <Suspense fallback={null}>
+          <RotatingStars />
+          <Preload all />
+        </Suspense>
+      </Canvas>
+    </div>
+  );
+};
 
 export default StarfieldBackground;
