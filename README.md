@@ -1,12 +1,27 @@
-# React + Vite
+<h1 align="center">Gongora.dev.br 🚀</h1> <p align="center"> Portfólio pessoal de desenvolvimento web, com foco em performance, responsividade e boas práticas. </p> <p align="center"> <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="#memo-licença">Licença</a> </p> <p align="center"> <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000"> </p> <br> <p align="center"> <img alt="Preview do Portfólio" src="https://gongora.dev.br/preview.jpg" width="80%"> </p>
+🚀 Tecnologias
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React
 
-Currently, two official plugins are available:
+TailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+Vite
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Next.js
+
+Git e Github
+
+💻 Projeto
+O portfólio Gongora.dev.br foi criado para apresentar projetos autorais e habilidades técnicas em desenvolvimento web. Ele representa meu compromisso com a performance, design limpo, responsividade e organização de código.
+
+O foco está em uma navegação fluida, experiência mobile otimizada e estrutura modular, ideal para escalar novos projetos e oportunidades.
+
+Você pode acessá-lo aqui 👉 https://gongora.dev.br
+
+:memo: Licença
+Este projeto está sob a licença MIT.
+
+Feito com ♥ por Gilberto Mussi de Carvalho :wave: Conecte-se comigo no LinkedIn!
