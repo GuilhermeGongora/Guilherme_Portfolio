@@ -17,7 +17,7 @@ Portfólio pessoal de desenvolvimento web, com foco em performance, responsivida
 <br>
 
 <p align="center">
-  <img alt="Projeto WeatheRS" src="WeatherApp/WeatherApp/Github/Preview.jpeg" width="80%">
+  <img alt="Projeto WeatheRS" src="Github/PortfolioPic.jpeg" width="80%">
 </p>
 
 ## 🚀 Tecnologias
