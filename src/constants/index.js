@@ -231,8 +231,7 @@ const testimonials = [
 const projects = [
   {
     name: "Clone-TabNews",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    description: "Projeto incrível sendo feito com o Filipe Deschamps",
     tags: [
       {
         name: "react",
